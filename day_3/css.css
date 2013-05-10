@@ -1,0 +1,73 @@
+div.h1{
+	width: 150px;
+	height: 75px;
+	float: left;
+background: #9ecb2d; /* Old browsers */
+background: -moz-linear-gradient(left,  #9ecb2d 0%, #bfd255 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9ecb2d), color-stop(100%,#bfd255)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #9ecb2d 0%,#bfd255 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #9ecb2d 0%,#bfd255 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #9ecb2d 0%,#bfd255 100%); /* IE10+ */
+background: linear-gradient(to right,  #9ecb2d 0%,#bfd255 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ecb2d', endColorstr='#bfd255',GradientType=1 ); /* IE6-9 */
+
+		box-shadow: 3px 3px 3px #000;
+-webkit-border-top-left-radius: 15px;
+-webkit-border-bottom-left-radius: 15px;
+-moz-border-radius-topleft: 15px;
+-moz-border-radius-bottomleft: 15px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+div.h1 h1{
+	font-family: "Roboto Slab";
+	color: #FFF;
+	text-shadow: -2px 2px #000;
+	font-weight: 700;
+	text-align: center;
+}
+div.h1 h1:hover{
+	text-shadow: -2px 2px 2px #000;
+
+}
+form {
+		font-family: "Roboto Slab";
+		font-size: 1.5em;
+	text-shadow: -.5px .5px #FFF;
+	float: left;
+background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+	width: 200px;
+	padding: 50px;
+	box-shadow: 3px 3px 3px #000;
+
+	-webkit-border-radius: 15px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 15px;
+-moz-border-radius-topleft: 0;
+border-radius: 15px;
+border-top-left-radius: 0;
+}
+form:hover{
+	box-shadow: 1px 1px 1px #000;
+
+ }
+
+input {
+	margin: 25px;
+}
+input:focus{
+	transform: scale(2) ;
+ 	transition: transform .5s;
+ }
+ label.username{
+ 	display: inline-block;
+ 	margin-top: 50px;
+ }
+
