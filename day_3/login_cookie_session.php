@@ -74,10 +74,10 @@ elseif ( $_COOKIE['logged_in'] == 1 ) {
 <?php 
 } //end - if not logged in
 else{ ?>
-
-	<p>You are logged In!</p>
+<div class="winner">
+	<p>Welcome Beavis!</br> Here are your Nachos.</p>
 	<p><a href="login_cookie_session.php?action=logout">Get Out</a></p>
-
+</div>
 <?php }?>
 
 </body>
