@@ -1,0 +1,37 @@
+
+div.container{
+	background-color: rgba(0,255,0,0.25);
+}
+header{
+	width: 80%;
+	margin: 0 auto;
+	background-color: rgba(255,0,0,0.25);
+	height: 180px ;
+}
+header h1 {
+
+}
+div.wrapper{
+
+
+	
+}
+
+aside{
+	float: right;
+	width: 20%;
+	min-width: 175px;
+	margin-right: 10%;
+	padding-left: 1%;
+	background-color: rgba(255,0,0,0.25);
+}
+main{
+	float: left;
+	padding: 1%;
+	width: 50%;
+	margin-left: 10%;
+}
+
+footer{
+	clear: both;
+}
