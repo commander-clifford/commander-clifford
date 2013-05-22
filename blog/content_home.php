@@ -11,14 +11,14 @@
 			if($result = $db->query($query)	):		
 			 ?>
 
-			<h2>Most Recent Blobs</h2>
+			<h2>Most Recent BloBs</h2>
 				<?php 
 					//loop thru the list of results
 				while ($row = $result->fetch_assoc() ):
 				 ?>
 			<article class="posts">
-				<h3><?php echo $row['title']; ?></h3>
-				<div class="postmeta">Posted on <?php echo $row['date']; ?> 
+				<h3><a href="index.php?page=single&amp;post_id=<?php echo $row['post_id']; ?>"><?php echo $row['title']; ?></a></h3>
+				<div class="postmeta">Posted on <?php echo convert_date($row['date']); ?> 
 					| in the category <?php echo $row['name']; ?>
 					| By <?php echo $row['username']; ?>
 				</div>
