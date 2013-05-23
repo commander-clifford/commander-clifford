@@ -8,6 +8,7 @@ include_once('functions.php');
 <title>Comm-Cliff PHP BLOG</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Special+Elite|Amatic+SC|Marvel:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed of Blog Posts" href="rss.php"/>
 </head>
 <body>
 	

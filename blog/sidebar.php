@@ -1,4 +1,4 @@
-
+<h2><a href="rss.php">Subscribe to RSS Feed</a></h2>
 	<?php 
 	//set up query to get the titles and posts-ids of the last 10 posts
 	$query_latest = "SELECT title, post_id

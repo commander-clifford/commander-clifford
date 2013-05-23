@@ -56,14 +56,11 @@ body{
 	min-width: 365px;
 	margin: 0 auto;
 	background-color: rgba(242,212,174,0.25);
-	border-radius: 15px;
+	border-radius: 0 0 15px 15px;
 	font-family: 'Marvel', sans-serif;
 	}
 header{
-	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-radius: 0 0 15px 15px;
 	background-color: rgba(115,100,29,0.5);
 	padding: 2%;
 	min-width: 300px;
@@ -124,7 +121,6 @@ header nav ul li a:hover{
 	}	
 aside{
 	padding: 5%;
-	padding-left: 15%;
 	background-color: rgba(242,136,75,0.5);
 	}
 aside h2{
@@ -238,8 +234,7 @@ footer{
 	min-height: 50px;
 	margin: 0 auto;
 	background-color: rgba(115,100,29,0.5);
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
+	border-radius: 15px 15px 0 0;
 	padding: 15px;
 	}
 
@@ -258,7 +253,6 @@ aside {
 	width: 20%;
 	min-height: 300px;
 	margin-right: 3%;
-	padding: 0;
 	padding-left: 1%;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -280,7 +274,7 @@ main section#comment-form form{
 	border-bottom-left-radius: 10px;
 }
 footer{
-	border-radius: 15px;
+	
 	}
 	
 	
