@@ -1,3 +1,6 @@
+	<?php include('searchform.php'); ?>
+
+
 <h2><a href="rss.php">Subscribe to RSS Feed</a></h2>
 	<?php 
 	//set up query to get the titles and posts-ids of the last 10 posts
@@ -9,6 +12,9 @@
 	//run query and check for results
 	if ($result_latest = $db->query($query_latest) ):
 	 ?>
+
+
+
 	<h2>Latest Posts</h2>
 		<ul>
 			<?php 
