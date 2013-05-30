@@ -11,19 +11,20 @@ include_once('functions.php');
 <link rel="alternate" type="application/rss+xml" title="RSS Feed of Blog Posts" href="rss.php"/>
 </head>
 <body>
-	
-		<header class="cf">
-			<div class="heading">
-				<h1>Commander-Clifford's Blog</h1>
-			</div>
-			<nav>
-				<ul>
+	<div class="container cf">
+		<header>
+			<div class="heading cf">
+					<h1>Commander-Clifford's Blog</h1>
+			</header>
+			<nav class="cf">
+				<ul class="cf">
 					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php?page=blog">Blog</a></li>
 					<li><a href="index.php?page=links">Links</a></li>
 				</ul>
 			</nav>
 		</header>
+	<div class="main-area cf">
 		<main>
 			<?php 
 				//logic to load the correct page contents.
@@ -49,10 +50,12 @@ include_once('functions.php');
 		<aside>
 			<?php include('sidebar.php') ?>
 		</aside>
-		
+	</div><!--end main area-->
 		<footer>
 			<p>footer fetish?</p>
 		</footer>
+	</div><!--end first container-->
+
 
 	
 
