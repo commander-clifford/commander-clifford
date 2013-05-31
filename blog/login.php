@@ -35,9 +35,13 @@ if ($_POST['did_login']) {
 	
 	//if one record is found, log in
 	if ( 1 == $result->num_rows ) {
+		$row = $result->fetch_assoc();
 			//use cookies and sessions to remember the user
 		$_SESSION['logged_in'] = 1;
-		setcookie( 'logged_in', 1, time() + 60 * 10 );
+		setcookie( 'logged_in', 1, time() + 60 * 60 * 24 * 14);
+		//Who is logged  in 
+		$_SESSION['user_id'] = $row['user_id'];
+		setcookie('user_id', $row['user_id'], time() + 60 * 60 * 24 * 14); 
 		//direct logged in user to admin panel
 		header( 'location:admin.php' );
 		}else{

@@ -12,10 +12,10 @@ include_once('functions.php');
 </head>
 <body>
 	<div class="container cf">
-		<header>
+		<header class="cf">
 			<div class="heading cf">
 					<h1>Commander-Clifford's Blog</h1>
-			</header>
+			</div>
 			<nav class="cf">
 				<ul class="cf">
 					<li><a href="index.php">Home</a></li>
