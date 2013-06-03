@@ -55,31 +55,35 @@ a:active{
 	text-decoration: none;
 	color: #FFF;
 }
-body{
+body{	
+	margin: 0;
+	background-image: url(img/crn_ui.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
 	background-color: rgba(62,62,64,1.0);
 	font-family: 'Marvel', sans-serif;
 	}
 .container{
-	background-image: url(img/crn_ui.jpg);
-	background-repeat: no-repeat;
-	background-size:contain;
-	margin: 0 auto;
-	padding: 20% 15% 1%;
 
+	margin: 0 auto;
+	padding: 0 15%;
 }
+
 
 header{
-	padding: 0 1%;
-	position: relative;
+ margin-top: 10px;
+ margin-left: 15%;
 }
 div.heading{
-	float: left;
-	margin-right: 1%;
+
+float: right;
+margin-right: 20%
 }
 h1 {
 	font-family: 'Special Elite', cursive;
 	line-height: 1.2em;
 	text-shadow:-1px 1px 1px rgba(242, 242, 242, 0.5);
+	text-align: center;
 	}
 /*nav{
 	position: absolute;
@@ -87,13 +91,16 @@ h1 {
 	top: 10%;
 }*/
 nav{
-	float: right;
-	margin-right: 1%;
+display: inline-block;
+	margin-left: 20%;
+	margin-top: 8%;
+
 }
 
 nav ul{
 	padding: 0;
 	border-bottom: solid 2px #000;
+	display: inline-block;
 	}
 nav ul li {
 	list-style-type: none;
