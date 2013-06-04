@@ -49,17 +49,16 @@
     <div class="main-container">
         
         <?php 
-                //logic to load the correct page contents.
-                //URI will look like domain/index.php?page=something
-                switch( $_GET['page'] ){
-                    case 'trail':
-                        include('content-trail.php');
-                    break;
-                    
-                    default:
-                        include('content-home.php');
-                }
-            ?>
+            //logic to load the correct page contents.
+            //URI will look like domain/index.php?page=something
+            switch( $_GET['page'] ){
+                case 'trail':
+                    include('content-trail.php');
+                break;
+                default:
+                    include('content-home.php');
+            }
+        ?>
 
 
     </div><!--main-container-->
