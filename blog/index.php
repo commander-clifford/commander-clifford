@@ -23,9 +23,9 @@ include_once('functions.php');
 			</ul>
 		</nav>
 	</header>
-		<div class="container cf">
-	<div class="main-area cf">
-		<main>
+	<div class="container cf">
+		<div class="main-area cf">
+			<main>
 			<?php 
 				//logic to load the correct page contents.
 				//URI will look like domain/index.php?page=something

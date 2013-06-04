@@ -1,76 +1,76 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+/*boilerplate*/
+    html,
+    button,
+    input,
+    select,
+    textarea {
+        color: #222;
+    }
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
+    body {
+        font-size: 1em;
+        line-height: 1.4;
+    }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
+    ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+    ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+    img {
+        vertical-align: middle;
+    }
 
-img {
-    vertical-align: middle;
-}
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+    textarea {
+        resize: vertical;
+    }
 
-textarea {
-    resize: vertical;
-}
+    .chromeframe {
+        margin: 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
 
-.chromeframe {
-    margin: 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+    .cf:after {
+        clear: both;
+    }
 
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
+    /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    .cf {
+        *zoom: 1;
+    }
 
 
 /* ==========================================================================
@@ -158,6 +158,7 @@ div.header-container header ul li a{
 /*========== masthead-container ==========*/
 
 div.masthead-container{
+    color: #FFF;
 }
 div.masthead-container header{
     background: -moz-radial-gradient(bottom, ellipse cover,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */

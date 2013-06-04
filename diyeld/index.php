@@ -1,3 +1,21 @@
+<?php 
+session_start();
+require('db-connect.php');
+include_once('functions.php');
+include('login-parse.php');
+include('register-parse.php');
+
+//get all info about logged in user
+if( $_SESSION['logged_in'] ):
+    $user_id = $_SESSION['user_id'];
+    $query_user = "SELECT * FROM users WHERE user_id = $user_id";
+    $result_user = $db->query($query_user);
+    $row_user = $result_user->fetch_assoc();
+    //handy variables we can use anywhere in our admin panel
+    $username = $row_user['username'];
+    $user_pic = $row_user['avatar_link'];
+endif;
+?>
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -18,12 +36,12 @@
             <h1>DiYeld</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Trails</a></li>
-                    <li><a href="#">Shops</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Members</a></li>                    
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php?page=trails">Trails</a></li>
+                    <li><a href="index.php?page=shops">Shops</a></li>
+                    <li><a href="index.php?page=gallery">Gallery</a></li>
+                    <li><a href="index.php?page=about">About</a></li>
+                    <li><a href="index.php?page=members">Members</a></li>                    
                 </ul>
             </nav>
         </header>
@@ -38,29 +56,48 @@
             </h1>
             <p>DiYELD is a community of riders dedicated to building quality trails for evryone to ride safely</p>
             <ul>
-                <li>Login</li>
+                <li><a href="#">Login</a></li>
                 <li> | </li>
-                <li>Register</li>
+                <li><a href="index.php?page=register">Register</a></li>
             </ul>
-            <div class="button">Login</div>
+            <div ><?php include('login-form.php') ?></div>
         </header>
     </div><!--masthead container-->
 
     <div class="main-container">
-        
+        <div class="wrapper clearfix gradi">
+        <?php include('breadcrumb.php'); ?>
         <?php 
             //logic to load the correct page contents.
             //URI will look like domain/index.php?page=something
             switch( $_GET['page'] ){
-                case 'trail':
-                    include('content-trail.php');
+                case 'trails':
+                    include('content-trails.php');
+                break;
+                case 'gallery':
+                    include('content-gallery.php');
+                break;
+                case 'shops':
+                    include('content-shops.php');
+                break;
+                case 'register':
+                    include('content-register-form.php');
+                break;
+                case 'search':
+                    include('content-search.php');  
+                break;
+                case 'about':
+                    include('content-about.php');  
+                break;
+                case 'terms':
+                    include('content-terms.php');  
                 break;
                 default:
                     include('content-home.php');
             }
         ?>
 
-
+        </div>
     </div><!--main-container-->
 
     <div class="recent-posts-container">
@@ -118,6 +155,8 @@
         <div class="wrapper clearfix">
                 <nav>
                     <ul>
+                        <li><a href="rss.php">Subscribe to RSS Feed</a></li>
+                        <li> | </li>
                         <li><a href="#">Home</a></li>
                         <li> | </li>
                         <li><a href="#">Trails</a></li>
