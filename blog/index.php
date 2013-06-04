@@ -11,19 +11,19 @@ include_once('functions.php');
 <link rel="alternate" type="application/rss+xml" title="RSS Feed of Blog Posts" href="rss.php"/>
 </head>
 <body>
-	<div class="container cf">
-		<header class="cf">
-			<div class="heading cf">
-					<h1>Commander-Clifford's Blog</h1>
-			</div>
-			<nav class="cf">
-				<ul class="cf">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="index.php?page=blog">Blog</a></li>
-					<li><a href="index.php?page=links">Links</a></li>
-				</ul>
-			</nav>
-		</header>
+	<header class="cf">
+		<div class="heading cf">
+			<h1>Clifford's Blog</h1>
+		</div>
+		<nav class="cf">
+			<ul class="cf">
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php?page=blog">Blog</a></li>
+				<li><a href="index.php?page=links">Links</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div class="container cf">
 	<div class="main-area cf">
 		<main>
 			<?php 
