@@ -95,33 +95,54 @@ body{
 .wrapper{
     margin: 0 5%;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
-    }
-.button{
-    border-radius: 15px;
+    }   
+.full{
+    width: 98%;
     padding: 1%;
-    
-}    
+}
+.threequarter{
+    width: 72%;
+    padding: 1%;
+}
+.half{
+    width: 47%;
+    padding: 1%;
+}
+.quarter{
+    width: 22%;
+    padding: 1%;
+}
+.doublesize{
+    font-size: 3em;
+}
+.fleft{
+    float: left;
+}
+input[type=checkbox]{
+    clear: left;
+}
+
 /*========== header-container ==========*/
 div.header-container{
     margin:10px 0 50px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.45);
 }
 div.header-container header{
-    background: -moz-radial-gradient( bottom, ellipse cover,  rgba(75,75,75,0.65) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 100%, color-stop(0%,rgba(75,75,75,0.65)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));
-    background: -webkit-radial-gradient( bottom, ellipse cover,  rgba(75,75,75,0.65) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-    background: -o-radial-gradient( bottom, ellipse cover,  rgba(75,75,75,0.65) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-    background: -ms-radial-gradient( bottom, ellipse cover,  rgba(75,75,75,0.65) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-    background: radial-gradient(ellipse at bottom,  rgba(75,75,75,0.65) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+    background: -moz-radial-gradient( bottom, ellipse cover,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 100%, color-stop(0%,rgba(0,0,0,0.75)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));
+    background: -webkit-radial-gradient( bottom, ellipse cover,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+    background: -o-radial-gradient( bottom, ellipse cover,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+    background: -ms-radial-gradient( bottom, ellipse cover,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+    background: radial-gradient(ellipse at bottom,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
     height: 48px;
     border-bottom: solid 2px rgba(243,243,243,0.7) ;
 }
-div.header-container header h1{
+header h1{
     float: left;
     margin: 0;
 }
-div.header-container header nav {
+header nav {
 }
 div.header-container header ul {
     background-color: rgba(0,0,0,0.0);
@@ -175,15 +196,13 @@ div.masthead-container header{
     -webkit-box-shadow: inset 0 0 70px rgba(0,0,0,0.75);
     box-shadow: inset 0 0 70px rgba(0,0,0,0.75);*/ 
     /*box-shadow: 0 0 1em rgba(94,182,77,0.5);*/
-    min-height: 180px;
     position: relative;
 }
 div.masthead-container header h1{
     color: #f3f3f3;
-    text-shadow: - 1px 1px 0 #000;
-    font-size: 40px;
-    float: left;
-    margin: 0 5% 0 0;
+    text-shadow: -2px 2px 0 #000;
+
+
 }
 div.masthead-container header p{
     float: left;
@@ -191,27 +210,44 @@ div.masthead-container header p{
     font-size:1.1em;
     margin: 1%;  
 }
-div.masthead-container header ul{
-    float: right;
-    margin-right: 4%;
-    min-width: 77px;
-}
-div.masthead-container header ul li{
-    float: left;
-    list-style-type: none;
-    margin-left: 1%;
-    margin-right: 1%;
-    font-size: .7em;
-}
-div.masthead-container header div.button{
-    background-color: rgba(0,0,0,0.25);
-    width: 12%;
-    height: 25%;
+.login-form{
     position: absolute;
-    right: 4%;
-    bottom: 20%;
+    bottom: 0;
+    right: 0; 
+    min-width: 320px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
 }
+.login-form h2{
+    font-size: .75em;
+    margin: 0;
+}
+.login-form label{
+display: none;
+}
+.reg-form label{
+    display: block;
+}
+.reg-form input{
+    display: block;
+   
+}
+.reg-form input.button{
+    float: right;
+    
+}
+
+
 /*==========  ==========*/
+#search{
+    float: right;
+    background: none;
+}
 
 div.main-container div{
    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
@@ -261,14 +297,12 @@ div.top4 nav ul li h3{
 div.main-container section{
     background-color: rgba(0,0,0,0.1);
     float: left;
-    width: 23%;
-    padding: 1%;
+
     min-height: 500px;
 }
 div.main-container main{
     float: left;
-    width: 48%;
-    padding: 1%;
+
 }
 /*==========  ==========*/
 div.recent-posts-container div{

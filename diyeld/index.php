@@ -21,7 +21,7 @@ endif;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FreeRideSD</title>
+    <title>Di-Yeld</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -50,17 +50,8 @@ endif;
 
     <div class="masthead-container">
         <header class="clearfix wrapper">
-            <h1><span>Get out there</span><br />
-            and ride a trail that <br />
-            that <span>you</span> helped build
-            </h1>
-            <p>DiYELD is a community of riders dedicated to building quality trails for evryone to ride safely</p>
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li> | </li>
-                <li><a href="index.php?page=register">Register</a></li>
-            </ul>
-            <div ><?php include('login-form.php') ?></div>
+            <h1>Where Mountain Bikers Yell<br> about the Trails They Ride</h1> 
+            <div class="login-form quarter" ><?php include('login-form.php') ?></div>
         </header>
     </div><!--masthead container-->
 

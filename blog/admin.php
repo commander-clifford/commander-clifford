@@ -65,6 +65,9 @@ $user_pic = $row_user['avatar_link'];
 				case 'profile':
 					include('admin-profile.php');
 					break;
+				case 'edit':
+					include('admin-edit.php');
+					break;
 				default:
 					include('admin-dashboard.php');
 			}

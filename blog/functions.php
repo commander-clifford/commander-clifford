@@ -92,8 +92,17 @@ function count_user_comments( $link, $user_id, $status = 1 ){
 	return $row['total'];
 }
 
-
-
+/**
+*Convert boolean to "is_public" or "is_private"
+*@param $status bool - Pass the value of is_public from the database
+*/
+function isit_public($status){
+	if( $status == 1 ):
+		return '<span class="published">Public</span>';
+	else:
+		return '<span class="draft">Private</span>';
+	endif;
+}
 
 
 
