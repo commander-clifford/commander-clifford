@@ -96,30 +96,28 @@ h1 {
 
 	}
 div.header nav{
-	sfloat: right;
+	float: right;
 	margin-right: 3%;
 	margin-top: 48px;
 }
-nav ul{
+div.header nav ul{
 	padding: 0;
 	margin:0;
-
 	border-bottom: solid 2px #000;
 	}
-nav ul li {
+div.header nav ul li {
 	list-style-type: none;
 	float: left;
 	}
-nav ul li a {
+div.header nav ul li a {
 	text-align: center;
 	color: #FFF;
 	text-shadow:-1px 1px 0px rgba(0,0,0,1.0);
-	display: block;
 	font-family: 'Amatic SC', cursive;
 	font-size: 1.5em;
 	padding: 0 10px;
 	}
-nav ul li a:hover{
+div.header nav ul li a:hover{
 	color: rgba(134,191,10,1.0);
 background: -moz-linear-gradient(top,  rgba(80,115,3,0) 0%, rgba(80,115,3,0.25) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(80,115,3,0)), color-stop(100%,rgba(80,115,3,0.25))); /* Chrome,Safari4+ */
@@ -132,7 +130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00507303', e
 	border-bottom: solid 2px rgba(134,191,10,1.0);
 	margin-bottom: -2px;
 	}	
-nav ul li a:focus{
+div.header nav ul li a:focus{
 	transform: translate(0px,2px);
 	-ms-transform: translate(0px,2px); /* IE 9 */
 	-webkit-transform: translate(0px,2px); /* Safari and Chrome */
@@ -148,8 +146,10 @@ aside{
 	min-width: 120px;
 	width: 20%;
 	padding-left: 1%;
+	border-bottom: 2px solid rgba(0,0,0,0.5);
 	border-left: 2px solid rgba(0,0,0,0.5);
 	border-top: 2px solid rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.25);
 	
 	}
 aside h2{
@@ -179,7 +179,7 @@ main{
 	border-bottom-left-radius: 15px;
 	padding: 2%;
 	color: rgba(255,255,255,1.0);
-	background-color: rgba(0,0,0,0.25);
+
 	}
 main h2 {
 	font-size: 2em;
@@ -265,8 +265,8 @@ footer{
 	clear: both;
 	min-height: 50px;
 	margin: 0 auto;
+	margin-top: 1%;
 	background-color: rgba(0, 0, 0, 0.25);
-	border-radius: 15px 15px 0 0;
 	padding: 15px;
 	}
 

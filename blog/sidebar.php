@@ -1,6 +1,6 @@
 	<?php include('searchform.php'); ?>
 
-
+<section>
 <h2><a href="rss.php">Subscribe to RSS Feed</a></h2>
 	<?php 
 	//set up query to get the titles and posts-ids of the last 10 posts
@@ -12,9 +12,8 @@
 	//run query and check for results
 	if ($result_latest = $db->query($query_latest) ):
 	 ?>
-
-
-
+</section>
+<section>
 	<h2>Latest Posts</h2>
 		<ul>
 			<?php 
@@ -25,8 +24,6 @@
 		</ul>
 	<?php endif; ?>
 
-
-
 		<?php 
 	//set up query to get the titles and posts-ids of the last 10 posts
 	$query_latest = "SELECT *
@@ -35,6 +32,8 @@
 	//run query and check for results
 	if ($result_latest = $db->query($query_latest) ):
 	 ?>
+</section>
+<section>
 	<h2>Categories</h2>
 		<ul>
 			<?php 
@@ -54,6 +53,8 @@
 	//run query and check for results
 	if ($result_latest = $db->query($query_latest) ):
 	 ?>
+</section>
+<section>
 	<h2>Links I like:</h2>
 		<ul>
 			<?php 
@@ -63,3 +64,4 @@
 			<?php endwhile; ?>
 		</ul>
 	<?php endif; ?>
+</section>

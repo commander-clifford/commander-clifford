@@ -53,11 +53,11 @@ include_once('functions.php');
 			<?php include('sidebar.php') ?>
 		</aside>
 	</div><!--end main area-->
+		
+	</div><!--end first container-->
 		<footer>
 			<p>footer fetish?</p>
 		</footer>
-	</div><!--end first container-->
-
 
 	
 

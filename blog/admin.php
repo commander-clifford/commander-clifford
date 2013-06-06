@@ -25,6 +25,7 @@ $user_pic = $row_user['avatar_link'];
 <meta charset="utf-8">
 <title>Manage Your Blog</title>
 <link rel="stylesheet" type="text/css" href="admin_style.css">
+<script src="js/custom.js" type="text/javascript"></script>
 </head>
 
 <body>	
