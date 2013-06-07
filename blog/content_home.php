@@ -13,7 +13,7 @@
 
 			<h2>Most Recent BloBs</h2>
 				<?php 
-					//loop thru the list of results
+				//loop thru the list of results
 				while ($row = $result->fetch_assoc() ):
 				 ?>
 			<article class="posts">
