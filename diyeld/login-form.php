@@ -26,7 +26,7 @@
 else{ ?>
 <div class="winner">
 	<p>Welcome <?php echo $username; ?></br> Here are your Nachos.</p>
-	<p><a href="index.php?action=logout">Get Out</a></p><br />
+	<p class="button"><a href="index.php?action=logout">Get Out</a></p><br />
 
 </div>
 <?php }?>

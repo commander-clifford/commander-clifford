@@ -84,6 +84,11 @@ a:visited{
 a:hover{
     text-shadow: -1px 1px 0px rgba(230, 52, 52, 0.75);
 }
+img{
+    width: 100%;
+    height: auto;
+}
+
 
 
 body{
@@ -109,7 +114,7 @@ body{
     padding: 1%;
 }
 .quarter{
-    width: 22%;
+    width: 23%;
     padding: 1%;
 }
 .doublesize{
@@ -118,8 +123,15 @@ body{
 .fleft{
     float: left;
 }
+.fright{
+    float: right;
+}
 input[type=checkbox]{
     clear: left;
+}
+.button{
+    border-radius: 10px;
+    background-color: rgba(230, 52, 52, 0.75);
 }
 
 /*========== header-container ==========*/
@@ -182,6 +194,7 @@ div.masthead-container{
     color: #FFF;
 }
 div.masthead-container header{
+    height: 90px;
     background: -moz-radial-gradient(bottom, ellipse cover,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, bottom bottom, 0px, bottom bottom, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
     background: -webkit-radial-gradient(bottom, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -206,7 +219,6 @@ div.masthead-container header h1{
 }
 div.masthead-container header p{
     float: left;
-    width: 20%;
     font-size:1.1em;
     margin: 1%;  
 }
@@ -238,8 +250,7 @@ display: none;
    
 }
 .reg-form input.button{
-    float: right;
-    
+    float: right; 
 }
 
 
@@ -280,30 +291,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', e
 
 
 }
+div.top4 nav{
+
+}
 div.top4 nav ul{
     margin: 0;
+    padding: 0;
 }
 div.top4 nav ul li{
     float: left;
     width: 25%;
+}
+div.top4 img{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+div.top4 a{
+    float: left;
+    width: 100%;
+    text-align: center;
+    text-shadow: -1px 1px 0px #000;
+    background-color: rgba(230, 52, 52, 1.0);
+    background: rgb(230,52,52); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(230,52,52,1) 0%, rgba(73,17,17,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,52,52,1)), color-stop(100%,rgba(73,17,17,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(230,52,52,1) 0%,rgba(73,17,17,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(230,52,52,1) 0%,rgba(73,17,17,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(230,52,52,1) 0%,rgba(73,17,17,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(230,52,52,1) 0%,rgba(73,17,17,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63434', endColorstr='#491111',GradientType=0 ); /* IE6-9 */
 
+
+    /*color: rgba(230, 52, 52, 0.75);
+    */
 }
-div.top4 nav ul li h3{
-    color: #F00;
-    margin:0;
-    padding:0;
+div.top4 a:hover{
+    border-bottom: solid 2px #000;
+    margin-top: -2px;
+    text-shadow: -1px 3px 2px #000;
 }
+
 
 div.main-container section{
     background-color: rgba(0,0,0,0.1);
-    float: left;
-
-    min-height: 500px;
 }
 div.main-container main{
     float: left;
 
 }
+
 /*==========  ==========*/
 div.recent-posts-container div{
     background-color: rgba(255,255,255,0.65);
@@ -315,6 +352,16 @@ figure{
     width: 16%;
     padding: 1%;
     margin: 1%;
+    background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(45deg,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.5);
+}
+figure:hover {
     background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.25)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -323,17 +370,7 @@ figure{
     background: linear-gradient(45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
-}
-figure:hover {
-    background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.25)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    box-shadow: -1px 1px 2px rgba(230,52,52,0.5);
-    transform:translate(-1px, 1px);
+    transform:translate(1px, -1px);
 }
 div.recent-pics-container div{
     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
@@ -346,6 +383,18 @@ div.recent-pics-container div{
      background-color: rgba(255,255,255,0.65);
     padding: 1%;
     }
+main.trails figure{
+    clear: both;
+    float: none;
+    display: inline-block;
+    width: 96%;
+    padding: 1%;
+}
+main.trails figure img{
+    width: 50%;
+    margin: .5%;
+    float: left;
+}
 /*==========  ==========*/
 div.footer-container div{
     background-color: rgba(0,0,0,0.5);

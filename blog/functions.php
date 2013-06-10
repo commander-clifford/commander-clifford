@@ -105,6 +105,31 @@ function isit_public($status){
 }
 
 
+/**
+*Show an Avatar for any user, in any pre-defined size
+*@param $user_id int - pass any users id
+*@param $image_size string - pass one of the predefined image sizes. default = thumb image
+*@param $db resource - pass the mysqli connection link 
+*/
+function show_avatar($user_id,$db,$image_size = 'thumb_img'){ 
+	//look up the users avatar from the DB
+	$query ="SELECT $image_size AS size FROM users
+				WHERE user_id = $user_id
+				LIMIT 1 ";
+	$result = $db->query($query);
+	//make sure a result was found
+	if( $result->num_rows == 1 ):
+		$row = $result->fetch_assoc();
+		//if this user does not have an avatar, show the default
+		if($row['size'] == ''):
+			return '<img src="images/default-user.png" alt="User Pic" />';
+		else:
+			return '<img src="'.$row['size'].'" alt"User Pic" />';
+		endif;
+	endif;
+
+}
+
 
 
 ?>

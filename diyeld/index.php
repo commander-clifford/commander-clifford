@@ -92,53 +92,11 @@ endif;
     </div><!--main-container-->
 
     <div class="recent-posts-container">
-        <div class="wrapper clearfix">
-            <figure>
-                <h5>Trail Name</h5>
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <h5>Trail Name</h5>
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <h5>Trail Name</h5>
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <h5>Trail Name</h5>
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <h5>Trail Name</h5>
-                <p>Comments on this trail</p>
-            </figure>
-        </div>
+       <?php include ('recent-posts.php'); ?>
     </div>
     
     <div class="recent-pics-container">
-        <div class="wrapper clearfix">
-            <figure>
-                <img src="#" alt="pic">
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <img src="#" alt="pic">
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <img src="#" alt="pic">
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <img src="#" alt="pic">
-                <p>Comments on this trail</p>
-            </figure>
-             <figure>
-                <img src="#" alt="pic">
-                <p>Comments on this trail</p>
-            </figure>
-        </div>
+        <?php include ('recent-pics.php'); ?>
     </div>
 
 

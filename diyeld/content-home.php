@@ -26,8 +26,9 @@
                     $result_trail = $db->query($query_trail);
                     while( $row_trail = $result_trail->fetch_assoc() ):
                     ?>
-                <li><a href="#"><?php echo $row_trail['trail_sname']; ?>
-                    <img width="125" height="125" src="<?php echo $row_trail['picture_link']; ?>" /></a>
+                <li>
+                    <a href="#"><?php echo $row_trail['trail_sname']; ?></a>
+                    <img width="125" height="125" src="<?php echo $row_trail['picture_link']; ?>" />
                 </li>
                     <?php endwhile; ?>  
                 <?php endwhile; ?>
@@ -42,7 +43,7 @@
 
 
 
-        <section class="rate quarter">
+        <section class="rate quarter fleft">
             RATING AREA
         </section>
         <main class="half">
@@ -50,7 +51,7 @@
             <p><?php echo $row_trail['trail_title']; ?>TRAIL TITLE</p>
             <p>TRAIL DESCRIPTION Ennui YOLO kale chips, vinyl occupy chillwave craft beer art party Vice Pinterest Echo Park iPhone food truck fingerstache. Yr dreamcatcher butcher small batch trust fund sriracha shabby chic banjo, viral Portland Marfa deep v Echo Park synth asymmetrical. Forage ethnic pickled vegan ethical flexitarian. Viral mumblecore jean shorts stumptown tousled raw denim. Cray keffiyeh brunch seitan lo-fi banjo, beard retro tumblr Godard. Photo booth american apparel 90's, ethnic forage seitan Neutra cray pug fap. Selfies bicycle rights tousled, polaroid iPhone Schlitz viral.</p> 
         </main>
-        <section class="quarter">
+        <section class="quarter fright">
             RECENT POSTS
         </section>
 
