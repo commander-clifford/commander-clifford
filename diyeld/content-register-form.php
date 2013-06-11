@@ -1,31 +1,9 @@
 
 <div>
-    <main class="quarter reg-form">
-        <h2>Sign Up</h2>
-        <?php 
-        //error message reporting
-        if(isset($msg)):
-            echo $msg;
-        endif;?>
-
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>?page=register" method="post">
-
-        <label for="username">Choose your Alias:</label>
-        <input type="text" name="username" id="username" required="required" />
-        
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required="required" />
-        
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required="required" />
-        
-        <label for="repassword">Repeat Password:</label>
-        <input type="password" name="repassword" id="repassword" required="required" />
-        <br>
-        <input type="checkbox" name="policy" id="policy" value="1" required="required" />
-        <label for="policy">I agree to the <a href="index.php?page=terms">terms of service and privacy policy</a></label>
-        <br>
-        <input type="submit" value="Sign Up!" />
-        <input type="hidden" name="did_register" value="1" />
+    <main class="threequarter fleft">
+            <h2>Registration is FREE</h2>
+            <p>Become a DiYeld rider...</p>
+            <p>DiYeld.com is not responsible for you or your actions, No matter what!  Ride safely, ride often, leave only tracks.  Some trails are on private land, you might get arrested for riding on these trails.  But those landowners are assholes if they press charges.  Don't build unauthorized features on highly visible trails, these trails live on a delicate balance reached between land owners and trails bosses, don't be the asshole who fucks it up for everyone else.  Do not alter features to lower said feature to your riding ability, instead build your own features and build your skills, then ride the original feature. </p> 
     </main>
+    <?php include ('reg-form.php'); ?>
 </div><!--wrapper-->

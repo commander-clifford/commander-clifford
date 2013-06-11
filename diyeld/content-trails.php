@@ -12,7 +12,7 @@ if($result_alltrails->num_rows >= 1): ?>
     <?php while ($row_alltrails = $result_alltrails->fetch_assoc() ): ?>
 
         <figure>
-            <img src="<?php echo $row_alltrails['picture_link'] ?>" alt="pic">
+            <a href="#"><img src="<?php echo $row_alltrails['picture_link'] ?>" alt="pic"></a>
             
             <h3><?php echo $row_alltrails['trail_name'] ?></h3>
             <p><?php echo $row_alltrails['trail_title'] ?></p>

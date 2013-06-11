@@ -1,9 +1,4 @@
-<div>
-        
-        <section class="rate">
-            RATING AREA
-        </section>
-        <main>
+        <main class="full">
             <?php 
 //Configuration
 $perpage = 5; //number of results to show per page
@@ -14,9 +9,15 @@ $phrase = $_GET['phrase'];
 
 //get all posts and comments that are similar to the query, make sure the posts are distinct
 $query_search = "SELECT distinct *
-                FROM posts
-                WHERE  ( title LIKE '%".$phrase."%'
-                OR body LIKE '%".$phrase."%' )
+                FROM trails
+                LEFT JOIN posts
+                ON posts.trail_id = trails.trail_id
+                WHERE  ( trails.trail_sname LIKE '%".$phrase."%'
+                OR trails.trail_name LIKE '%".$phrase."%' 
+                OR trails.trail_title LIKE '%".$phrase."%'
+                OR trails.trail_description LIKE '%".$phrase."%'
+                OR posts.title LIKE '%".$phrase."%'
+                OR posts.body LIKE '%".$phrase."%')
                 ORDER BY date DESC";
 //run it       
 $result_search = $db->query($query_search);
@@ -77,17 +78,12 @@ if ($result_search->num_rows >= 1){
     <?php
 //show each article 
         while ($row = $modresults->fetch_assoc()){      
-
-            //count the comments on that post for display
-            $postid = $row['post_id'];
-            $query_count = "SELECT COUNT(*) AS numcomments FROM comments WHERE post_id=$postid";
-            $result_count = $db->query($query_count);
-            $row_count = $result_count->fetch_assoc();
-            $numcomments = $row_count['numcomments'];
+            
             ?>
     <article class="post">
-        <h3><a href="?page=single&amp;post_id=<?php echo $postid; ?>"><?php echo $row['title']; ?></a></h3>
-        <div class="postmeta">Posted on <?php echo convert_date($row['date']); ?> | <?php comments_number($numcomments); ?></div>
+        <h3><a href="?page=single&amp;post_id=<?php echo $postid; ?>"><?php echo $row['trail_name']; ?></a></h3>
+        <h2><?php echo $row['title']; ?></h2>
+        <div class="postmeta">Posted on <?php echo convert_date($row['date']); ?></div>
     </article>
     <?php } ?>
     <?php
@@ -116,6 +112,4 @@ if ($result_search->num_rows >= 1){
 }
 ?>
         </main>
-        <section>
-            RECENT POSTS
-        </section>
+

@@ -16,7 +16,7 @@
 
                    
             <figure>
-                <img src="<?php echo $row_5pics['picture_link'] ?>" alt="pic">
+                <a href="#"><img src="<?php echo $row_5pics['picture_link'] ?>" alt="pic"></a>
                 <p><?php echo $row_5pics['name'] ?></p>
                 <p><?php echo $row_5pics['description'] ?></p>
             </figure>

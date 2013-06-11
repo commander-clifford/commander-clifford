@@ -21,7 +21,7 @@ endif;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Di-Yeld</title>
+    <title>Di-YELd</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -33,7 +33,7 @@ endif;
 <body class="home">
     <div class="header-container">
         <header class="clearfix wrapper">
-            <h1>DiYeld</h1>
+            <h1>Di-YELd</h1>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -109,17 +109,17 @@ endif;
                     <ul>
                         <li><a href="rss.php">Subscribe to RSS Feed</a></li>
                         <li> | </li>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li> | </li>
-                        <li><a href="#">Trails</a></li>
+                        <li><a href="index.php?page=trails">Trails</a></li>
                         <li> | </li>
-                        <li><a href="#">Shops</a></li>
+                        <li><a href="index.php?page=shops">Shops</a></li>
                         <li> | </li>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a href="index.php?page=gallery">Gallery</a></li>
                         <li> | </li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.php?page=about">About</a></li>
                         <li> | </li>
-                        <li><a href="#">Members</a></li>
+                        <li><a href="index.php?page=members">Members</a></li>                    
                     </ul>
                 </nav>
         </div>

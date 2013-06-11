@@ -25,8 +25,8 @@
 } //end - if not logged in
 else{ ?>
 <div class="winner">
-	<p>Welcome <?php echo $username; ?></br> Here are your Nachos.</p>
-	<p class="button"><a href="index.php?action=logout">Get Out</a></p><br />
+	<p>Welcome <?php echo $username; ?></br> Start YELLing</p>
+	<p class="button"><a href="index.php?action=logout">Log Out</a></p><br />
 
 </div>
 <?php }?>

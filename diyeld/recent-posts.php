@@ -17,7 +17,7 @@
 
                    
             <figure>
-                <img src="<?php echo $row_5posts['picture_link'] ?>" alt="pic" />
+                <a href="#"><img src="<?php echo $row_5posts['picture_link'] ?>" alt="pic" /></a>
                 <h5><?php echo $row_5posts['trail_sname'] ?></h5>
                 <p><?php echo $row_5posts['title'] ?></p>
             </figure>
