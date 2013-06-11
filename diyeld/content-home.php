@@ -1,8 +1,5 @@
     <div class="top4">
 
-
-
-
         <nav>
                 <?php 
                 //Get top 4 rated trails
@@ -38,11 +35,6 @@
 
         </nav>
 
-
-
-
-
-
         <section class="rate quarter fleft">
             RATING AREA
         </section>
@@ -54,8 +46,5 @@
         <section class="quarter fright">
             RECENT POSTS
         </section>
-
-
-
 
     </div>

@@ -1,5 +1,7 @@
     <nav class="clearfix breadcrumb ">
-        breadcrumb
+        
+        <?php echo breadcrumbs(); ?>
+        
         <div id="search">
             <?php include('search-form.php'); ?>
         </div>

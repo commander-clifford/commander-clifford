@@ -65,6 +65,9 @@ endif;
                 case 'trails':
                     include('content-trails.php');
                 break;
+                case 'trail':
+                    include('content-trail.php');
+                break;
                 case 'gallery':
                     include('content-gallery.php');
                 break;
